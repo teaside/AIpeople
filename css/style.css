@@ -2,10 +2,12 @@
     font-family: MontserratExtraBold;
     src: url('./../fonts/Monsterrat/Montserrat-ExtraBold.ttf');
 }
+
 @font-face {
     font-family: Montserrat;
     src: url('./../fonts/Monsterrat/Montserrat-Regular.ttf');
 }
+
 @font-face {
     font-family: MontserratBlack;
     src: url('./../fonts/Monsterrat/Montserrat-Black.ttf');
@@ -15,14 +17,53 @@
     font-family: Montserrat;
 }
 
-html, body, div, span, 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-img, ins, kbd, q, s, samp,
-small, strike, strong, 
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -76,9 +117,11 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     cursor: pointer;
     padding: 0 11px;
 }
+
 .button-text_active {
     color: #fff;
 }
+
 .button-text:focus {
     color: #fff;
 }
@@ -122,6 +165,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     padding: 0 24px;
     line-height: 30px;
 }
+
 .socials__link:nth-of-type(3) {
     line-height: 31px;
     padding-left: 2px;
@@ -170,7 +214,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     border: none;
 }
 
-.menu__icon  {
+.menu__icon {
     padding: 0px 21px 0 0px;
     position: relative;
     display: inline-block;
@@ -186,6 +230,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     background-color: #000;
     margin-bottom: 7px;
 }
+
 .bold-half-line:before {
     content: "";
     display: block;
@@ -194,6 +239,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     background-color: #000;
     margin-bottom: 7px;
 }
+
 .bold-half-line:after {
     content: "";
     position: absolute;
@@ -211,8 +257,93 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 
 .footer {
     width: 100%;
+    max-width: inherit;
     position: fixed;
     bottom: 0;
+    padding: 10px 0;
+}
+
+.footer__content {
+    max-width: 1430px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hint-scroll  {
+    display: flex;
+    align-items: center;
+}
+
+.mouse-block {
+    padding-left: 4px;
+}
+
+.mouse {
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 43%;
+}
+.mouse:after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: #000;
+    width: 2.5px;
+    height: 7px;
+    top: 5px;
+    left: calc(50% - 1.25px);
+    border-radius: 43%;
+    opacity: 1;
+    animation: wheel-scroll 4s infinite ease-in-out;
+}
+@keyframes wheel-scroll {
+    from {
+        top: 5px;
+    }
+
+    5% {
+        top: 6px;
+    }
+
+    10% {
+        top: 7px;
+    }
+
+    15% {
+        top: 7px;
+    }
+
+    20% {
+        top: 8px;
+    }
+
+    25% {
+        top: 9px;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    to {
+        top: 5px;
+        opacity: 0;
+    }
+}
+
+.hint-scroll__title {
+    padding-left: 24px;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .s-main {
