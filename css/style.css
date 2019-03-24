@@ -212,6 +212,7 @@ td,
     letter-spacing: 0.7px;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .menu__icon {
@@ -220,6 +221,7 @@ td,
     display: inline-block;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .bold-line:before {
