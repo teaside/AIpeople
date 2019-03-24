@@ -264,7 +264,7 @@ td,
 }
 
 .footer__content {
-    max-width: 1430px;
+    max-width: 1450px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -278,7 +278,7 @@ td,
 }
 
 .mouse-block {
-    padding-left: 4px;
+    padding-left: 13px;
 }
 
 .mouse {
@@ -341,9 +341,25 @@ td,
     padding-left: 24px;
 }
 
+.adding-info-block {
+    padding: 1px 6px 0px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.adding-info-block__copyright-block {
+    padding-right: 44px;
+}
 .small-text {
     font-size: 11px;
     font-weight: 600;
+}
+
+.mail-text {
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .s-main {
