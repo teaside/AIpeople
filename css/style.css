@@ -6,6 +6,10 @@
     font-family: Montserrat;
     src: url('./../fonts/Monsterrat/Montserrat-Regular.ttf');
 }
+@font-face {
+    font-family: MontserratBlack;
+    src: url('./../fonts/Monsterrat/Montserrat-Black.ttf');
+}
 
 * {
     font-family: Montserrat;
@@ -144,18 +148,61 @@ table, caption, tbody, tfoot, thead, tr, th, td,
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
-.menu__header {
+.menu__title {
     text-transform: uppercase;
     text-decoration: none;
-    font-family: MontserratExtraBold;
+    font-family: MontserratBlack;
     font-weight: 600;
     font-size: 14px;
-    padding-right: 9px;
+    padding: 6px 6px 0 0;
     color: #000;
+    letter-spacing: 0.7px;
+    background: transparent;
+    border: none;
+}
+
+.menu__icon  {
+    padding: 0px 21px 0 0px;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    border: none;
+}
+
+.bold-line:before {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 7px;
+}
+.bold-half-line:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 7px;
+}
+.bold-half-line:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    top: 24px;
+    left: 0;
+    width: 24px;
+    background-size: cover;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
 }
 
 .footer {
