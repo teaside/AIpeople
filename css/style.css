@@ -400,6 +400,7 @@ td,
     font-family: Montserrat;
     font-weight: 600;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 .scroll-block__progress-bar {
@@ -418,6 +419,112 @@ td,
     height: calc(190px / 4);
 }
 
+/*---------------------------------- 
+-------------OVERLAY--------------
+----------------------------------*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .87);
+    padding: 35px;
+    color: #fff;
+}
+
+.overlay__close-block {
+    position: relative;
+    top: 0;
+    height: fit-content;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.close-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay__close-block {
+    position: relative;
+    top: 0;
+    height: fit-content;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 35px 0 0;
+}
+
+.close-btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    left: 0;
+}
+.close-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+.overlay__menu {
+    color: #e5e5e5;
+    padding: 4px 0 0 121px;
+}
+
+.overlay__menu__item {
+    padding-bottom: 36px;
+}
+.overlay__menu__item:hover {
+    color: #c64045;
+}
+
+.overlay__menu__item:last-of-type {
+    padding-bottom: 70px;
+}
+
+.big-link-text {
+    text-decoration: none;
+    color: inherit;
+    font-size: 49px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.big-link-text::first-letter {
+    letter-spacing: 4px;
+}
+
+.small-link-text {
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: inline-block;
+}
 
 .s-main {
     background-color: #fdb14f;
