@@ -13,6 +13,11 @@
     src: url('./../fonts/Monsterrat/Montserrat-Black.ttf');
 }
 
+@font-face {
+    font-family: GothamProBold;
+    src: url('./../fonts/GothamPro-Bold.ttf');
+}
+
 * {
     font-family: Montserrat;
 }
@@ -80,7 +85,6 @@ td,
 }
 
 .noscroll {
-    /* position: fixed; */
     overflow-y:hidden;
 }
 
@@ -89,11 +93,11 @@ td,
 ----------------------------------*/
 
 .header {
+    z-index: 1;
     width: 100%;
     max-width: inherit;
     position: fixed;
     top: 0;
-    /* padding: 55px 0 60px 0; */
     padding: 3.6% 0 60px 0px;
     line-height: 26px;
 }
@@ -129,7 +133,7 @@ td,
     background-color: transparent;
     font-size: 17px;
     font-weight: 300;
-    color: #ffffff80;
+    color: #ffffff50;
     cursor: pointer;
     padding: 0 11px;
 }
@@ -147,7 +151,6 @@ td,
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* padding: 0 0 0 196px; */
 }
 
 .socials {
@@ -377,7 +380,6 @@ td,
 }
 
 .adding-info-block {
-    /* padding: 1px 6px 0px 0; */
     padding: 0px 6px 0px 0;
     display: flex;
     align-items: center;
@@ -587,11 +589,57 @@ td,
     display: inline-block;
 }
 
+/*---------------------------------- 
+-------------S-MAIN--------------
+----------------------------------*/
+
 .s-main {
+    z-index: 0;
+    position: relative;
     background-color: #fdb14f;
+    width: 100vw;
     height: 100vh;
 }
 
+.s-main::before {
+    content: "A";
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 13.5%;
+    font-family: GothamProBold;
+    font-weight: 800;
+    font-size: 720px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #c64045;
+}
+
+.s-main__left-block {
+    padding: 22% 0px 0 18%;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.s-main__right-block {
+    
+}
+
+.s-main__links-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0 7px;
+}
+
+
+.s-main__link-lock__item {
+    padding-bottom: 17px;
+}
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .socials {
