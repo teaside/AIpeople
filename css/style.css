@@ -90,6 +90,10 @@ td,
     background: transparent;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .content {
     max-width: 1460px;
     margin: 0 auto;
@@ -765,14 +769,21 @@ td,
     .overlay__footer {
         padding: 0 0 8px 0;
     }
+
     .footer__content {
         display: block;
         width: 80%;
     }
+
     .scroll-block {
         padding-left: 0px;
     }
+    
     footer.footer {
+        display: none;
+    }
+
+    .stab {
         display: none;
     }
 }
