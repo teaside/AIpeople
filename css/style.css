@@ -612,7 +612,7 @@ body {
     position: relative;
     background-color: #fdb14f;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -628,6 +628,13 @@ body {
     text-transform: uppercase;
     line-height: 1;
     color: #c64045;
+}
+
+.s-main::after {
+    content: "";
+    display: table;
+    clear: both;
+  
 }
 
 .s-main__left-block {
