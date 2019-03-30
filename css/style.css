@@ -428,6 +428,7 @@ body {
     padding-left: 44px;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
 .scroll-block__current-page {
@@ -457,8 +458,24 @@ body {
     background: #ff545d;
     position: relative;
     width: 1.5px;
-    top: calc(190px / 0);
+    /* top: calc(190px / 0); */
     height: calc(190px / 4);
+}
+
+.scroll-block__progress-bar_s1:after {
+    top: calc(190px / 0);
+}
+
+.scroll-block__progress-bar_s2:after {
+    top: calc(190px / 4);
+}
+
+.scroll-block__progress-bar_s3:after {
+    top: calc(190px / 2);
+}
+
+.scroll-block__progress-bar_s4:after {
+    top: calc(190px / 4 * 3);
 }
 
 /*---------------------------------- 
