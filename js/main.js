@@ -20,6 +20,16 @@ window.addEventListener('DOMContentLoaded', function () {
         setScroll(scroll);
     });
 
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
     // var color = document.querySelector('.scroll-block__progress-bar');
     // console.log(color.);
 });
@@ -72,3 +82,4 @@ function setScroll(scroll) {
     scroll.classList.add("scroll-block__progress-bar_s4");
   }
 }
+
