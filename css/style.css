@@ -773,6 +773,51 @@ body {
     overflow: hidden;
 }
 
+.s-vacancy__left-block {
+    padding: 10% 10% 0 10%;
+    color: #fff;
+}
+
+.s-vacancy__header {
+    color: inherit;
+}
+
+.checkbox__input {
+	display: none;
+}
+
+.checkbox__label {
+    color: rgba(255, 255, 255, .7);
+}
+
+.checkbox__label:before {
+	content: '';
+	display: inline-block;
+	background: #c64045;
+	left: 0;
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	border-radius: 80%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	transition: .3s ease-in-out;
+}
+
+.checkbox__input:checked + .checkbox__label:before {
+	border-color: #fff;
+	border-width: 2px;
+	background-color: #fff;
+}
+.checkbox__input + .checkbox__label {
+    transition: color .7s ease;
+    color: #fff;
+}
+.checkbox__input:checked + .checkbox__label {
+	color: #5D5D5D;
+}
+
 
 
  /* Extra small devices (portrait phones, less than 576px) */
