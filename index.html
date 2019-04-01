@@ -269,35 +269,37 @@
                     <p class="s-vacancy__subheader">Найдите интересующий раздел</p>
                     <div class="s-vacancy__category">
 
-                        <div class="checkbox">
-                                <input class="checkbox__input" id="checkboxDev" type="checkbox" name="checkboxDev">
-                                <label class="checkbox__label" for="checkboxDev">Разработка</label>
-                            </div>
-                      </div>
-                      
-                      <div class="s-vacancy__category">
-                        <div class="checkbox">
-                            <input class="checkbox__input" id="checkboxHR" type="checkbox" name="checkboxHR">
-                            <label class="checkbox__label" for="checkboxHR">HR</label>
-                        </div>
-                      </div>
-                      
-                      <div class="s-vacancy__category">
+                      <!-- <fieldset> -->
                             <div class="checkbox">
-                                <input class="checkbox__input" id="checkboxProduct" type="checkbox" name="checkboxProduct">
-                                <label class="checkbox__label" for="checkboxProduct">Продукт</label>
+                                    <input class="checkbox__input" id="checkboxDev" type="radio" name="vacancyGroup">
+                                    <label class="checkbox__label" for="checkboxDev">Разработка</label>
+                                </div>
+                          </div>
+                          
+                          <div class="s-vacancy__category">
+                            <div class="checkbox">
+                                <input class="checkbox__input" id="checkboxHR" type="radio" name="vacancyGroup">
+                                <label class="checkbox__label" for="checkboxHR">HR</label>
                             </div>
-                      </div>
-
-                      <div class="s-vacancy__category">
-                          <div class="checkbox">
-                                <input class="checkbox__input" id="checkboxVacancies" type="checkbox" name="checkboxVacancies">
-                                <label class="checkbox__label" for="checkboxVacancies">Поледние вакансии</label>
-                            </div>
-                      </div>
+                          </div>
+                          
+                          <div class="s-vacancy__category">
+                                <div class="checkbox">
+                                    <input class="checkbox__input" id="checkboxProduct" type="radio" name="vacancyGroup">
+                                    <label class="checkbox__label" for="checkboxProduct">Продукт</label>
+                                </div>
+                          </div>
+    
+                          <div class="s-vacancy__category">
+                              <div class="checkbox">
+                                    <input class="checkbox__input" id="checkboxVacancies" type="radio" name="vacancyGroup">
+                                    <label class="checkbox__label" for="checkboxVacancies">Поледние вакансии</label>
+                                </div>
+                          </div>
+                      <!-- </fieldset> -->
 
                       <p class="s-vacancy__additional">
-                          Не нашел вакансию? Жми <a href="#!">сюда</a>
+                          Не нашел свою вакансию? Жми <a class="s-vacancy__additional__link" href="#!">сюда</a>
                       </p>
                       <div class="s-vacancy__transitions">
                           <button class="button-arrow button-arrow__right" type="button">далее</button>
