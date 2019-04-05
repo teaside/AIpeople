@@ -653,7 +653,7 @@ body {
     font-size: 720px;
     text-transform: uppercase;
     line-height: 1;
-    color: #c64045;
+    color: #f39e4d;
 }
 
 .s-main::after {
@@ -872,13 +872,15 @@ body {
     font-size: 17px;
     letter-spacing: 3px;
     position: relative;
+    cursor: pointer;
+    padding: 0px 20px 0 0;
 }
 
 .button-arrow__right:before {
     content: "";
     position: absolute;
     top: 8px;
-    right: -10px;
+    left: 75px;
     display: block;
     width: 13px;
     height: 1px;
@@ -891,7 +893,7 @@ body {
     content: "";
     position: absolute;
     top: 16px;
-    right: -10px;
+    left: 75px;
     display: block;
     width: 13px;
     height: 1px;
